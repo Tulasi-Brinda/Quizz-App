@@ -1,0 +1,76 @@
+.App-header {
+  background-color: #FF8800;
+  height: 150px;
+  padding: 50px;
+  }
+
+.App-title {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: fantasy;
+  font-size: 50px;
+}
+
+ .cardContainer  {
+   margin-top:50px;
+ }
+
+.card {
+   border:0px !important;
+}
+
+.card-body {
+   width:50%;
+   margin: auto;
+   box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.card-text {
+    color: #4B515D;
+    font-family: Roboto,sans-serif;
+    font-size: 24px;
+}
+
+.list-group-item {
+   padding:0px !important; 
+}
+
+.list-group-item label {
+    font-size:18px;
+    margin: 0 0 10px 10px;
+    
+}
+
+input[type=radio] {
+    width: 28px;
+    height: 28px;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a.card-link button {
+    background-color: #FF8800;
+    border: 1px solid #FF8800;
+    width: 100px;
+    float: right;
+    height: 50px;
+    border-radius: 5px;
+    color:#fff;
+}
+
+a.card-link.prevbtn {
+  float:left;
+}
+
+
+.btn-default.succes:hover{
+   background-color: #ffb84d;
+   border: 1px solid #ffb84d;
+}
+

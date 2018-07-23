@@ -1,0 +1,62 @@
+{
+     	"Allquestions": [
+     		{	
+          "qid":0,
+    			"question":"Who is making the Web standards?",
+    			"answers": [
+        			{"id":0,"label":"The World Wide Web Consortium", "point": 1 ,"selected":""},
+        			{"id":1,"label":"Mozilla", "point": 0 ,"selected":""},
+        			{"id":2,"label":"Microsoft", "point": 0 ,"selected":""}
+    			]
+          
+   			},
+
+   			
+     		{	
+          "qid":1,
+    			"question":"What does HTML stand for?",
+    			"answers": [
+        			{"id":0,"label":"Home Tool Markup Language", "point": 0,"selected":"" },
+        			{"id":1,"label":"Hyperlinks and Text Markup Language", "point": 0,"selected":"" },
+        			{"id":2,"label":"Hyper Text Markup Language", "point": 1,"selected":"" }
+    			]
+          
+   			}, 
+
+
+   			{	
+          "qid":2,
+    			"question":"Which HTML element defines the title of a document?",
+    			"answers": [
+        			{"id":0,"label":"<title>", "point": 1 ,"selected":""},
+        			{"id":1,"label":"<meta>", "point": 0 ,"selected":""},
+        			{"id":2,"label":"<head>", "point": 0 ,"selected":""}
+    			]
+          
+   			},
+
+          { 
+          "qid":3,
+          "question":"Which HTML element is used to specify a footer for a document or section?",
+          "answers": [
+              {"id":0,"label":"<bottom>", "point": 0 ,"selected":""},
+              {"id":1,"label":"<footer>", "point": 1 ,"selected":""},
+              {"id":2,"label":"<section>", "point": 0 ,"selected":""}
+          ]
+          
+        },
+
+         { 
+          "qid":4,
+          "question":"In HTML, onblur and onfocus are:",
+          "answers": [
+              {"id":0,"label":"Event attributes", "point": 1 ,"selected":""},
+              {"id":1,"label":"HTML elements", "point": 0 ,"selected":""},
+              {"id":2,"label":"Style attributes", "point": 0 ,"selected":""}
+          ]
+          
+        }    
+
+
+   		]	
+ }
