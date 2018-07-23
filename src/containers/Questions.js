@@ -128,7 +128,7 @@ class Questions extends Component {
 
         <div className="cardContainer">
 			<div className="card card-body">
- 				 <p className="card-text">{this.renderQuestions()}</p>
+ 				 <span className="card-text">{this.renderQuestions()}</span>
     				<div className="flex-row">
         				<a className="card-link prevbtn">{prevButton}</a>
         				<a className="card-link">{nextButton}</a>
