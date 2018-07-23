@@ -4,10 +4,9 @@ import  { fetchQuestions, fetchNextQuestions, fetchPrevQuestions, fecthSelectedo
 
 
 class Questions extends Component {
-	
-	componentWillMount() {
+      componentWillMount() {
       this.props.fetchQuestions();
-	}
+}
 
     onChangOptions(qid,val) {
    	  this.props.questions.Allquestions.map((data)=>{
@@ -16,7 +15,7 @@ class Questions extends Component {
          	  if(val === answer.id)
          		 answer.selected="checked";
          		 else
-				 answer.selected="";
+		         answer.selected="";
          	});        	  
 		}
 	});
@@ -43,7 +42,7 @@ class Questions extends Component {
 
 	renderAnswers(qid,answers)
 	{ 
-		return answers.map((answer) => {
+	return answers.map((answer) => {
         return (
         <div>
         <ul className="list-group list-group-flush">
@@ -57,27 +56,25 @@ class Questions extends Component {
      });  
    }  
 
-
-
 	 renderQuestions() 
 	 {
-	 	if(this.props.questions.Allquestions) {
+	    if(this.props.questions.Allquestions) {
             if(this.props.finalScore != null){
-				 return <div>FINAL SCORE IS : {this.props.finalScore}</div>
-				}
-				else
-				{
+		return <div>FINAL SCORE IS : {this.props.finalScore}</div>
+		}
+		else
+		{
                     return this.props.questions.Allquestions.map((data)=>{
-                 	if(this.props.currentQuestion === data.qid ){ 
-                	return (
-                	<div>
-					<p key={data.qid}>{data.question}</p>
-					{this.renderAnswers(data.qid,data.answers)}</div>
-				 );
-		       }
-		   });
-         }
-	 }
+                    if(this.props.currentQuestion === data.qid ){ 
+                    return (
+                     <div>
+		     <p key={data.qid}>{data.question}</p>
+		     {this.renderAnswers(data.qid,data.answers)}</div>
+		     );
+		}
+	 });
+        }
+      }
    }
 
     
@@ -109,25 +106,25 @@ class Questions extends Component {
 
 
          if(currentIndex > 0 && this.props.finalScore === null) {
-          		prevButton = <button type="submit" className="btn-default succes" onClick={()=>this.displayPrevQuestion(this.props.currentQuestion)}>Prev</button>
+          prevButton = <button type="submit" className="btn-default succes" onClick={()=>this.displayPrevQuestion(this.props.currentQuestion)}>Prev</button>
          } 
          else 
          {
-         		prevButton = '';
+         prevButton = '';
          }
 
 
-  		if(currentIndex < totalNoOfQuestions-1 && this.props.finalScore === null) {
-    		 nextButton = <button type="submit" className="btn-default succes" onClick={()=>this.displayNextQuestion(this.props.currentQuestion)}>Next</button>
-   		}
+  	if(currentIndex < totalNoOfQuestions-1 && this.props.finalScore === null) {
+    	nextButton = <button type="submit" className="btn-default succes" onClick={()=>this.displayNextQuestion(this.props.currentQuestion)}>Next</button>
+   	}
     	else
-   		{
-   				if(this.props.finalScore === null)
-    		 nextButton = <button type="submit" className="btn-default succes" onClick={()=>this.finalScore()}>SUBMIT</button>
+   	{
+   	if(this.props.finalScore === null)
+    	nextButton = <button type="submit" className="btn-default succes" onClick={()=>this.finalScore()}>SUBMIT</button>
     	}
 
 
-		return (
+	return (
 
         <div className="cardContainer">
 			<div className="card card-body">
@@ -139,7 +136,7 @@ class Questions extends Component {
 			</div>
 
 		</div>
-      );
+           );
 	}
 }
 
